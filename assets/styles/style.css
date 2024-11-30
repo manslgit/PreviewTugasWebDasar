@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.5; 
+  transition: font-size 0.3s ease, line-height 0.3s ease;
+}
+
+main {
+  padding: 25px;
+  overflow: auto;
+}
+
+h2, h3 {
+  color: #001d47;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(38,38,187,1) 39%, rgba(0,212,255,1) 100%); 
+  text-align: center;
+  font-weight: bold;
+}
+
+nav {
+  padding: 5px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(38,38,187,1) 0%, rgba(14,9,106,1) 0%); 
+  text-align: right;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  font-weight: bold;
+  text-shadow: -2px 0px 8px rgba(255, 255, 255, 0.6);
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+}
+
+.header_center {
+  text-align: center;
+}
+
+section > .label_section {
+  text-align: center;
+}
+
+.profile header {
+  text-align: center;
+  color: white;
+}
+
+.container_tabel {
+  margin: auto;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  background-color: white;
+  -webkit-box-shadow: 2px 3px 12px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 12px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 3px 12px -4px rgba(0, 0, 0, 0.75);
+  margin: 7px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  scroll-margin-top: 50px;
+}
+
+.card:hover {
+  -webkit-box-shadow: -1px 1px 14px 0px rgba(0,72,189,1);
+  -moz-box-shadow: -1px 1px 14px 0px rgba(0,72,189,1);
+  box-shadow: -1px 1px 14px 0px rgba(0,72,189,1);
+}
+
+header {
+  display: inline;
+}
+
+.jumbroton {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(38,38,187,1) 39%, rgba(0,212,255,1) 100%); 
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 1500px) {
+  #content, aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px; 
+    line-height: 2; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .jumbroton > h1 {
+    font-size: 26px;
+  }
+}
+
+/* Ini Media Query untuk Ukuran Pixel Android */
+@media (max-width: 500px) {
+  .jumbroton > p {
+    font-size: 12px;
+  }
+  .jumbroton > h1 {
+    font-size: 20px;
+  }
+
+  .card {
+    margin-top: 5px;
+  }
+
+  nav li a {
+    font-size: 14px;
+    margin-right: -10px;
+  }
+  aside {
+    font-size: 12px;
+    padding: 10px; 
+  }
+
+  .gambar_patriot img {
+    width: 50%; 
+    height: auto;
+  }
+
+  .gambar_patriot figcaption {
+    font-size: 10px;
+  }
+
+  footer > .footer_me {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  main {
+    padding: 13px;
+  }
+}
