@@ -12,8 +12,10 @@ body {
 }
 
 main {
-  padding: 25px;
-  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 15px;
 }
 
 h2, h3 {
@@ -58,13 +60,11 @@ nav li {
 }
 
 #content {
-  float: left;
-  width: 75%;
+  flex: 3;
 }
 
 aside {
-  float: right;
-  width: 25%;
+  flex: 1;
 }
 
 .header_center {
@@ -128,9 +128,13 @@ header {
 }
 
 @media screen and (max-width: 1500px) {
+  main {
+    flex-direction: column;
+    padding: 15px;
+  }
   #content, aside {
     width: 100%;
-    padding: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -144,6 +148,9 @@ header {
 @media (max-width: 1024px) {
   .jumbroton > h1 {
     font-size: 26px;
+  }
+  main {
+    padding: 15px;
   }
 }
 
@@ -166,7 +173,7 @@ header {
   }
   aside {
     font-size: 12px;
-    padding: 10px; 
+    padding: 10px;
   }
 
   .gambar_patriot img {
